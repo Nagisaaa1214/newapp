@@ -15,7 +15,6 @@ class AuthService {
   Future<Map<String, dynamic>> signInWithEmailPassword(
       String email, String password) async {
     try {
-      // Fixed method name here
       final UserCredential userCredential = await _auth.signInWithEmailAndPassword(
           email: email, password: password);
       
